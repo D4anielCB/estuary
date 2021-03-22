@@ -31,6 +31,7 @@
 						<onright>50</onright>
 						<orientation>vertical</orientation>
 						<animation effect="zoom" end="50,100" time="300" tween="sine" center="20,0" easing="inout" condition="!Control.HasFocus(50600)">conditional</animation>
+						<hitrect x="-30" y="0" w="120" h="100%" />
 					</control>
 					<control type="image">
 						<depth>DepthContentPopout</depth>
@@ -101,7 +102,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<label>$VAR[ListLabel2Var]</label>
+						<label>$INFO[ListItem.Rating]</label>
 						<animation effect="fade" start="70" end="100" time="300" reversible="false">Focus</animation>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>
@@ -143,7 +144,7 @@
 						<align>right</align>
 						<aligny>center</aligny>
 						<font>font12</font>
-						<label>$VAR[ListLabel2Var]</label>
+						<label>$INFO[ListItem.Rating]</label>
 						<textcolor>grey</textcolor>
 						<shadowcolor>text_shadow</shadowcolor>
 					</control>

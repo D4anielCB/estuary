@@ -108,6 +108,24 @@
 						<visible>Player.Muted</visible>
 					</control>
 				</control>
+				<control type="grouplist">
+					<right>24</right>
+					<top>106</top>
+					<width>800</width>
+					<height>100</height>
+					<align>right</align>
+					<itemgap>5</itemgap>
+					<orientation>horizontal</orientation>
+					<usecontrolcoords>true</usecontrolcoords>
+					<control type="label">
+						<label>$INFO[VideoPlayer.VideoResolution,]</label>
+						<shadowcolor>text_shadow</shadowcolor>
+						<height>100</height>
+						<width>auto</width>
+						<visible>!String.isempty(Player.Duration)</visible>
+						<visible>Player.HasVideo + ![Player.HasGame | VideoPlayer.HasEpg]</visible>
+					</control>
+				</control>
 			</control>
 		</control>
 	</controls>
